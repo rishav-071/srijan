@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-align: justify;
+}
+#bg-black{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    z-index: -2;
+    position: fixed;
+    opacity: 1;
+}
+#bg{
+    background-image: url("media/bg.png");
+    background-size: cover;
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    top: 0px;
+    z-index: -1;
+    opacity: 0.2;
+}
+#nav{
+    background: linear-gradient(#000000,transparent);
+}
+.navbar-nav{
+    display: flex;
+    width: 50vw;
+    position: absolute;
+    justify-content: space-evenly;
+    right: 0vw;
+    flex-wrap: nowrap;
+}
+.navbar-brand{
+    position: relative;
+    left: 2vw;
+}
+.dropdown-item:hover{
+    background-color: rgba(84, 79, 79, 0.623);
+    border-radius: 20px;
+}
+#logo-text{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+#logos{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#x{
+    font-size: 3vw;
+    padding: 5vw;
+}
+.logf{
+    width: 20vw;
+    margin: 0px 0px 0px 10vw;
+}
+#log{
+    width: 30vw;
+}
+#description{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 5vw 70px 5vw;
+    font-size: 3vw;
+}
+#first-description{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+#logo-description{
+    padding: 2vw 5px;
+}
+@media(min-width:1500px){
+    #description{
+        font-size: 1.5vw;
+    }
+}
+strong{
+    font-size: 60px;
+}
+#days{
+    padding: 30px 0px 0px 2vw;
+}
+#day-badge{
+    font-weight: 100;
+    font-size: larger;
+}
+#second-description{
+    padding-left: 15vw;
+}
+#invitation{
+    padding: 40px 10vw;
+}
+#poster{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.poster{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    height: 580px;
+}
+a{
+    text-decoration: none;
+}
