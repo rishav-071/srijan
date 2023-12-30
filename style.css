@@ -65,6 +65,20 @@
 #log{
     width: 30vw;
 }
+@media(max-width:500px){
+    #logos{
+        padding-right: 10vw;
+    }
+    #x{
+        font-size: 6vw;
+    }
+    .logf{
+        width: 30vw;
+    }
+    #log{
+        width: 45vw;
+    }
+}
 #description{
     display: flex;
     flex-direction: column;
@@ -81,11 +95,6 @@
 #logo-description{
     padding: 2vw 5px;
 }
-@media(min-width:1500px){
-    #description{
-        font-size: 1.5vw;
-    }
-}
 strong{
     font-size: 60px;
 }
@@ -95,6 +104,22 @@ strong{
 #day-badge{
     font-weight: 100;
     font-size: larger;
+}
+@media(min-width:1500px){
+    #description{
+        font-size: 1.5vw;
+    }
+    strong{
+        font-size: 30px;
+    }
+}
+@media(max-width:500px){
+    #days{
+        padding: 15px 0px 0px 6vw;
+    }
+    strong{
+        font-size: 30px;
+    }
 }
 #second-description{
     padding-left: 15vw;
