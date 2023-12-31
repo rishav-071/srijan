@@ -4,6 +4,16 @@
     color: white;
     text-align: justify;
 }
+::-webkit-scrollbar{
+    width: 1px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #2d2929;
+}
+::-webkit-scrollbar-track-piece{
+    background: black;
+}
 #bg-black{
     background-color: black;
     height: 100vh;
