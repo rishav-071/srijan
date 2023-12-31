@@ -23,7 +23,10 @@
     opacity: 0.2;
 }
 #nav{
-    background: linear-gradient(#000000,transparent);
+    background: linear-gradient(#000000 30%,transparent 100%);
+}
+#nav-nav{
+    text-shadow: 0px 0px 10px orange;
 }
 .navbar-nav{
     display: flex;
@@ -37,9 +40,22 @@
     position: relative;
     left: 2vw;
 }
+.navbar-toggler.expanded{
+    box-shadow: none;
+    transition: 400ms linear;
+    transform: rotate(180deg);
+}
+.navbar-toggler.collapsed{
+    transition: 400ms linear;
+    transform: rotate(0deg);
+    box-shadow: none;
+}
 .dropdown-item:hover{
     background-color: rgba(84, 79, 79, 0.623);
     border-radius: 20px;
+}
+.dropdown-menu{
+    background-color: rgba(38, 37, 37, 0.793);
 }
 #logo-text{
     height: 100vh;
