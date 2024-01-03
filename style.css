@@ -5,14 +5,25 @@
     text-align: justify;
 }
 ::-webkit-scrollbar{
-    width: 1px;
-    background-color: transparent;
+    width: 0px;
 }
-::-webkit-scrollbar-thumb{
-    background-color: #2d2929;
+#scroll{
+    position: fixed;
+    top: 0vh;
+    right: 0px;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 0px white;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
 }
-::-webkit-scrollbar-track-piece{
-    background: black;
+@keyframes scroll-watcher{
+    to{
+        box-shadow: 0px 0px 100px white;
+        top: calc(100vh - 10px);
+    }
 }
 #bg-black{
     background-color: black;
@@ -24,7 +35,7 @@
 }
 #bg{
     background-image: url("media/bg.png");
-    background-size: cover;
+    background-size:cover;
     height: 100vh;
     position: fixed;
     width: 100vw;
@@ -37,6 +48,10 @@
 }
 #nav-nav{
     text-shadow: 0px 0px 10px orange;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: calc(1px /1);
+    font-size: 25px;
 }
 .navbar-nav{
     display: flex;
@@ -73,12 +88,26 @@
     flex-direction: column;
     justify-content:center;
     align-items: center;
+    inset: 0;
+    grid-column: 1/-1;
+    animation: logos-animation linear;
+    animation-timeline: view();
+    animation-range: exit;
 }
 #logos{
     background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@keyframes logos-animation{
+    70%{
+        opacity: 0;
+    }
+    100%{
+        scale: 8;
+        opacity: 0;
+    }
 }
 #x{
     font-size: 3vw;
@@ -110,7 +139,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 0px 5vw 70px 5vw;
+    padding: 0vh 5vw 70px 5vw;
     font-size: 3vw;
 }
 #first-description{
