@@ -4,45 +4,112 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Srijan</title>
-        <link rel="icon" type="image/x-icon" href="media/Srijan-logo.png">
+        <link rel="icon" type="image/x-icon" href="media/Srijan-logo.png" />
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+        <div id="bg-logo">
+            <img src="media/logo white 1.png" alt="FATS-logo" class="logf" />
+            <p id="x">X</p>
+            <img src="media/Srijan-logo.png" alt="Srijan-logo" id="log" />
+        </div>
+        <div id="scroll">
+            <div id="ring1" class="ring"></div>
+            <div id="ring2" class="ring"></div>
+            <div id="ring3" class="ring"></div>
+            <div id="hue"></div>
+        </div>
+        <!-- Check the Date -->
+        <div id="iiitbbsr">
+            <pre>I I I T   B H U B A N E S W A R</pre>
+        </div>
         <!-- fixed-background -->
         <div id="bg"></div>
         <div id="bg-black"></div>
-        <div id="scroll"></div>
         <!-- nav-bar Start -->
         <nav class="navbar navbar-expand-sm fixed-top" id="nav">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="media/Srijan-logo.png" alt="Srijan-logo" height="50px">
+                    <img
+                    src="media/Srijan-logo.png"
+                    alt="Srijan-logo"
+                    height="50px"
+                    />
                 </a>
-                <button class="navbar-toggler collapsed expanded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars-staggered fa-beat-fade fa-lg toggler-icon" style="color: white;"></i>
+                <button
+                class="navbar-toggler collapsed expanded"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                >
+                <i
+                class="fa-solid fa-bars-staggered fa-beat-fade fa-lg toggler-icon"
+                        style="color: white"
+                    ></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item dropdown" href="#">
-                            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav-nav">
-                                Events
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item text-light" href="#">Rule Book</a></li>
-                                <li><a class="dropdown-item text-light" href="#">Bollywood Night</a></li>
-                                <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
-                            </ul>
-                        </a>
-                        <a class="nav-link active text-light" aria-current="page" href="#" id="nav-nav">Memories</a>
-                        <a class="nav-link text-light" href="#" id="nav-nav">Result</a>
-                        <a class="nav-link text-light" href="#" id="nav-nav">About Us</a>
+                <div
+                class="collapse navbar-collapse expanded"
+                id="navbarNavAltMarkup"
+                >
+                <div class="navbar-nav">
+                    <a class="nav-item dropdown" href="#">
+                        <a
+                        class="nav-link dropdown-toggle text-light"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        id="nav-nav"
+                        >
+                        Events
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item text-light" href="#"
+                            >Rule Book</a
+                            >
+                        </li>
+                        <li>
+                            <a class="dropdown-item text-light" href="#"
+                            >Bollywood Night</a
+                            >
+                        </li>
+                        <li>
+                            <a class="dropdown-item text-light" href="#"
+                            >Roast Master</a
+                            >
+                        </li>
+                    </ul>
+                </a>
+                <a
+                class="nav-link active text-light"
+                aria-current="page"
+                href="#"
+                id="nav-nav"
+                >Memories</a
+                >
+                <a class="nav-link text-light" href="#" id="nav-nav"
+                >Result</a
+                >
+                <a class="nav-link text-light" href="#" id="nav-nav"
+                >About Us</a
+                        >
                     </div>
                 </div>
             </div>
@@ -51,100 +118,201 @@
         <!-- Landing View FATSxSrijan Start -->
         <div id="logo-text">
             <div class="container-fluid" id="logos">
-                <img src="media/logo white 1.png" alt="FATS-logo" class="logf" />
+                <img
+                src="media/logo white 1.png"
+                alt="FATS-logo"
+                class="logf"
+                />
                 <p id="x">X</p>
                 <img src="media/Srijan-logo.png" alt="Srijan-logo" id="log" />
             </div>
-            <p class="container-sm" style="text-align: center; padding-top: 20px;" id="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolore tempore veritatis aperiam, modi neque ullam quod excepturi harum suscipit nobis delectus expedita molestiae, sapiente corporis earum doloremque, itaque quam laboriosam incidunt. Voluptates cumque nam dignissimos officia ea quos debitis minima reiciendis quod ducimus neque adipisci praesentium, assumenda dolor pariatur, ipsam natus porro. Ea ipsam dolore odit neque. Eos, voluptas.</p>
+            <p
+            class="container-sm"
+            style="text-align: center; padding-top: 20px"
+            >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+            dolore tempore veritatis aperiam, modi neque ullam quod
+            excepturi harum suscipit nobis delectus expedita molestiae,
+            sapiente corporis earum doloremque, itaque quam laboriosam
+            incidunt. Voluptates cumque nam dignissimos officia ea quos
+            debitis minima reiciendis quod ducimus neque adipisci
+                praesentium, assumenda dolor pariatur, ipsam natus porro. Ea
+                ipsam dolore odit neque. Eos, voluptas.
+            </p>
         </div>
         <!-- Landing View FATSxSrijan End -->
         <!-- Srijan Description Start -->
         <div class="container-sm" id="description">
             <div id="first-description">
-                <img src="media/Srijan-logo.png" alt="Srijan-logo" id="log">
+                <img src="media/Srijan-logo.png" alt="Srijan-logo" id="log" />
                 <span id="logo-description">is not just an event.</span>
             </div>
-            <br>
-            <span id="second-description">
-                It's a celebration of creativity, expression, and the boundless world of drama. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente alias possimus asperiores nostrum corporis ipsum dolorum. Reiciendis ullam quo quasi a dicta laudantium autem aliquam? Reprehenderit numquam magni possimus nostrum.
-                <br><br>
-                Over three exhilarating days, participants and spectators alike embark on a journey filled with laughter, emotions, and the magic of storytelling. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem sapiente voluptates, recusandae veniam quasi sequi iusto qui commodi molestiae quas, dolores numquam ipsa ex placeat blanditiis iure minus. Fugit, beatae?
-            </span>
+            <br />
+            <p id="second-description">
+                It's a celebration of creativity, expression, and the boundless
+                world of drama. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Sapiente alias possimus asperiores nostrum
+                corporis ipsum dolorum. Reiciendis ullam quo quasi a dicta
+                laudantium autem aliquam? Reprehenderit numquam magni possimus
+                nostrum.
+                <br /><br />
+                Over three exhilarating days, participants and spectators alike
+                embark on a journey filled with laughter, emotions, and the
+                magic of storytelling. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Dolorem sapiente voluptates, recusandae veniam
+                quasi sequi iusto qui commodi molestiae quas, dolores numquam
+                ipsa ex placeat blanditiis iure minus. Fugit, beatae?
+            </p>
+            <div id="date">19 / 01 / 2024 - 22 / 01 / 2024</div>
         </div>
         <!-- Srijan Description End -->
         <!-- Day-0 Start -->
-        <div class="container-sm" id="days"><strong>Day 0</strong>
+        <div class="container-sm" id="days">
+            <strong>Day 0</strong>
             <span class="badge" id="day-badge">18 Jan</span>
         </div>
-        <img class="img-fluid" src="media/opening-ceremony-invitation.png" alt="Opening-Ceremony-Invitation" id="invitation">
-        <img class="img-fluid" src="media/bg.png" alt="Opening-Ceremony-Invitation" id="invitation">
+        <img
+            class="img-fluid"
+            src="media/opening-ceremony-invitation.png"
+            alt="Opening-Ceremony-Invitation"
+            id="invitation"
+        />
+        <img
+            class="img-fluid"
+            src="media/nukkad.png"
+            alt="Nukkad"
+            id="invitation"
+        />
         <!-- Day-0 End -->
         <!-- Day-1 Start -->
-        <div class="container-sm" id="days"><strong>Day 1</strong>
+        <div class="container-sm" id="days">
+            <strong>Day 1</strong>
             <span class="badge" id="day-badge">19 Jan</span>
         </div>
         <div id="poster" class="container-sm">
             <a href="#" class="poster">
-                <img src="media/OpenMic.png" alt="#" width="250px"><!-- Add alter & Poster -->
+                <img
+                    src="media/OpenMic.png"
+                    alt="#"
+                    width="250px"
+                /><!-- Add alter & Poster -->
                 <p>Open Mic</p>
             </a>
             <a href="#" class="poster">
-                <img src="media/OpenMic.png" alt="#" width="250px"><!-- Add alter & Poster -->
+                <img
+                    src="media/OpenMic.png"
+                    alt="#"
+                    width="250px"
+                /><!-- Add alter & Poster -->
                 <p>Open Mic</p>
             </a>
             <a href="#" class="poster">
-                <img src="media/OpenMic.png" alt="#" width="250px"><!-- Add alter & Poster -->
+                <img
+                    src="media/OpenMic.png"
+                    alt="#"
+                    width="250px"
+                /><!-- Add alter & Poster -->
                 <p>Open Mic</p>
             </a>
             <a href="#" class="poster">
-                <img src="media/OpenMic.png" alt="#" width="250px"><!-- Add alter & Poster -->
+                <img
+                    src="media/OpenMic.png"
+                    alt="#"
+                    width="250px"
+                /><!-- Add alter & Poster -->
                 <p>Open Mic</p>
             </a>
             <a href="#" class="poster">
-                <img src="media/OpenMic.png" alt="#" width="250px"><!-- Add alter & Poster -->
+                <img
+                    src="media/OpenMic.png"
+                    alt="#"
+                    width="250px"
+                /><!-- Add alter & Poster -->
                 <p>Open Mic</p>
             </a>
         </div>
         <!-- Day-1 End -->
         <!-- Day-2 Start -->
-        <div class="container-sm" id="days"><strong>Day 2</strong>
+        <div class="container-sm" id="days">
+            <strong>Day 2</strong>
             <span class="badge" id="day-badge">20 Jan</span>
         </div>
         <div id="poster" class="container-sm">
             <a href="#" class="poster">
-                <img src="media/OpenMic.png" alt="#" width="250px"><!-- Add alter & Poster -->
+                <img
+                    src="media/OpenMic.png"
+                    alt="#"
+                    width="250px"
+                /><!-- Add alter & Poster -->
                 <p>Open Mic</p>
             </a>
             <a href="#" class="poster">
-                <img src="media/OpenMic.png" alt="#" width="250px"><!-- Add alter & Poster -->
+                <img
+                    src="media/OpenMic.png"
+                    alt="#"
+                    width="250px"
+                /><!-- Add alter & Poster -->
                 <p>Open Mic</p>
             </a>
             <a href="#" class="poster">
-                <img src="media/OpenMic.png" alt="#" width="250px"><!-- Add alter & Poster -->
+                <img
+                    src="media/OpenMic.png"
+                    alt="#"
+                    width="250px"
+                /><!-- Add alter & Poster -->
                 <p>Open Mic</p>
             </a>
             <a href="#" class="poster">
-                <img src="media/BOLLYWOOD night 1.png" alt="Bollywood-Night-Poster" width="250px"><!-- Change Event Timing on Poster -->
+                <img
+                    src="media/BOLLYWOOD night 1.png"
+                    alt="Bollywood-Night-Poster"
+                    width="250px"
+                /><!-- Change Event Timing on Poster -->
                 <p>Open Mic</p>
             </a>
             <a href="#" class="poster">
-                <img src="media/OpenMic.png" alt="DJ-Poster" width="250px"><!-- Poster -->
+                <img
+                    src="media/OpenMic.png"
+                    alt="DJ-Poster"
+                    width="250px"
+                /><!-- Poster -->
                 <p>DJ Night</p>
             </a>
         </div>
         <!-- Day-2 End -->
         <!-- Day-3 Start -->
-        <div class="container-sm" id="days"><strong>Day 3</strong>
+        <div class="container-sm" id="days">
+            <strong>Day 3</strong>
             <span class="badge" id="day-badge">21 Jan</span>
         </div>
-        <img class="img-fluid" src="media/bg.png" alt="closeing-Ceremony-Invitation" id="invitation"><!-- Add Poster -->
+        <img
+            class="img-fluid"
+            src="media/bg.png"
+            alt="closeing-Ceremony-Invitation"
+            id="invitation"
+        /><!-- Add Poster -->
         <!-- Day-3 End -->
-        <div class="container-sm" style="text-align: center; padding-top: 10vh;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam odio nisi fuga sunt facere facilis nihil obcaecati hic vero. Quia exercitationem nobis, saepe dolorem expedita pariatur eum eligendi quasi aspernatur harum iusto non, culpa omnis perspiciatis. Neque animi culpa nesciunt! Repellat doloribus dolor aperiam placeat velit, voluptatum officia ducimus veritatis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas deleniti quibusdam placeat et dolore? Necessitatibus eos labore cum nisi harum laborum repellat repellendus, fugit, enim sequi expedita vel ipsa incidunt.</div>
-        <img src="media/bg.png" alt="Thank You" class="img-fluid" style="padding: 20px 10vw;">
+        <div class="container-sm" style="text-align: center; padding-top: 10vh">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam odio
+            nisi fuga sunt facere facilis nihil obcaecati hic vero. Quia
+            exercitationem nobis, saepe dolorem expedita pariatur eum eligendi
+            quasi aspernatur harum iusto non, culpa omnis perspiciatis. Neque
+            animi culpa nesciunt! Repellat doloribus dolor aperiam placeat
+            velit, voluptatum officia ducimus veritatis? Lorem, ipsum dolor sit
+            amet consectetur adipisicing elit. Quas deleniti quibusdam placeat
+            et dolore? Necessitatibus eos labore cum nisi harum laborum repellat
+            repellendus, fugit, enim sequi expedita vel ipsa incidunt.
+        </div>
+        <img
+            src="media/thank-you.png"
+            alt="Thank You"
+            class="img-fluid"
+            style="padding: 20px 20vw;"
+        />
         <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
         ></script>
     </body>
 </html>
