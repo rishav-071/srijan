@@ -40,19 +40,19 @@
 }
 @keyframes rotate{
     20%{
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
     }
     40%{
-        transform: rotate(720deg);
+        transform: rotate(-720deg);
     }
     60%{
-        transform: rotate(1080deg);
+        transform: rotate(-1080deg);
     }
     80%{
-        transform: rotate(1440deg);
+        transform: rotate(-1440deg);
     }
     100%{
-        transform: rotate(1800deg);
+        transform: rotate(-1800deg);
     }
 }
 .ring{
@@ -102,6 +102,35 @@
     width: 0vw;
     height: 0vh;
     opacity: 0;
+}
+@keyframes bg-logo-fade{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0.3;
+    }
+    95%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@supports(animation-timeline: scroll()){
+    #bg-logo{
+        background-color: transparent;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        opacity: 0;
+        animation: bg-logo-fade linear;
+        animation-timeline: scroll();
+    }
 }
 #iiitbbsr{
     font-size: 30px;
@@ -217,32 +246,6 @@
         animation: logos-animation linear;
         animation-timeline: view();
         animation-range: exit;
-    }
-}
-@keyframes bg-logo-fade{
-    0%{
-        opacity: 0;
-    }
-    20%{
-        opacity: 0.3;
-    }
-    100%{
-        opacity: 0.3;
-    }
-}
-@supports(animation-timeline: scroll()){
-    #bg-logo{
-        background-color: transparent;
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        position: fixed;
-        justify-content: center;
-        align-items: center;
-        z-index: -1;
-        opacity: 0;
-        animation: bg-logo-fade linear;
-        animation-timeline: scroll();
     }
 }
 #logos{
