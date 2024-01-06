@@ -126,7 +126,7 @@
         position: fixed;
         justify-content: center;
         align-items: center;
-        z-index: -1;
+        z-index: 0;
         opacity: 0;
         animation: bg-logo-fade linear;
         animation-timeline: scroll();
@@ -152,8 +152,8 @@
     background-color: black;
     height: 100vh;
     width: 100vw;
-    z-index: -2;
     position: fixed;
+    z-index: -2;
     opacity: 1;
 }
 #bg{
@@ -164,7 +164,7 @@
     width: 100vw;
     top: 0px;
     z-index: -1;
-    opacity: 0.2;
+    opacity: 0.1;
 }
 #nav{
     background: linear-gradient(#000000 30%,transparent 100%);
@@ -264,6 +264,15 @@
 }
 #log{
     width: 30vw;
+}
+#first-text{
+    text-align: center;
+    padding-top: 20px
+}
+@media(min-width:900px){
+    #first-text{
+        font-size: 150%;
+    }
 }
 #description{
     display: flex;
