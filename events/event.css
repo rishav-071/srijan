@@ -1,0 +1,35 @@
+#father{
+    padding: 100px 30px;
+    display: flex;
+    flex-direction: column;
+}
+#bn{
+    display: flex;
+    margin: 0 0 20px 0;
+    align-items: center;
+}
+.rolled-btn {
+    height: 25px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 15px;
+}
+.rolled-btn:hover {
+    height: 30px;
+}
+#child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#grand-child{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
