@@ -29,12 +29,12 @@
         top: calc(100vh - 20px);
     }
 }
-#hue{
+#tracker{
     width: 10px;
     height: 10px;
     border-radius: 50%;
     position: absolute;
-    background: conic-gradient(blue ,aqua , green, yellow, orange, red, blue);
+    background: conic-gradient(#f27b04  ,white ,  black , #f27b04);
     animation: rotate linear;
     animation-timeline: scroll();
 }
@@ -53,48 +53,6 @@
     }
     100%{
         transform: rotate(-1800deg);
-    }
-}
-.ring{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    position: absolute;
-}
-#ring1{
-    border-bottom: 2px solid blue;
-    animation: rotate1 1s linear infinite;
-}
-@keyframes rotate1{
-    from{
-        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-    }
-    to{
-        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
-    }
-}
-#ring2{
-    border-right: 2px solid red;
-    animation: rotate2 1s linear infinite;
-}
-@keyframes rotate2{
-    from{
-        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-    }
-    to{
-        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
-    }
-}
-#ring3{
-    border-top: 2px solid green;
-    animation: rotate3 1s linear infinite;
-}
-@keyframes rotate3{
-    from{
-        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-    }
-    to{
-        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
     }
 }
 #bg-logo{
@@ -164,7 +122,7 @@
     width: 100vw;
     top: 0px;
     z-index: -1;
-    opacity: 0.1;
+    opacity: 0.15;
 }
 #nav{
     background: linear-gradient(#000000 30%,transparent 100%);
