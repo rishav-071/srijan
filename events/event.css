@@ -146,6 +146,9 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.img{
+    padding-bottom: 20px;
+}
 #grand-child{
     width: 500px;
     display: flex;
