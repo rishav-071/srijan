@@ -1,0 +1,66 @@
+#bg-black{
+  background-color: #000000;
+  height: 100vh;
+  width: 100vw;
+  z-index: -2;
+  position: fixed;
+  opacity: 1;
+}
+#bg{
+  background-image: url("media/bg.png");
+  background-size: cover;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  top: 0px;
+  z-index: -1;
+  opacity: 0.2;
+}
+#nav{
+  background: linear-gradient(#000000,transparent);
+}
+.navbar-nav{
+  display: flex;
+  width: 50vw;
+  position: absolute;
+  justify-content: space-evenly;
+  right: 0vw;
+  flex-wrap: nowrap;
+}
+.navbar-brand{
+  position: relative;
+  left: 2vw;
+}
+.dropdown-item:hover{
+  background-color: rgba(84, 79, 79, 0.623);
+  border-radius: 20px;
+}
+
+/*about*/
+
+#about
+{
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 7%;
+  color: white;
+}
+
+img {
+  transition: transform 0.3s ease-in-out;
+  border-radius: 2%; 
+}
+
+ h2{
+  font-weight: 900;
+  text-shadow: .1rem .1rem .1rem black;
+}
+
+p{
+ padding: .2rem;
+}
+.text-center img:hover {
+  transform: scale(1.1);
+  border-color: white; 
+}
