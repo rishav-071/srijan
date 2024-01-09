@@ -68,28 +68,6 @@
       opacity: 0;
   }
 }
-@supports(animation-timeline: scroll()){
-  #bg-logo{
-      background-color: transparent;
-      height: 100vh;
-      width: 100vw;
-      display: flex;
-      position: fixed;
-      justify-content: center;
-      align-items: center;
-      z-index: 0;
-      opacity: 0;
-      animation: bg-logo-fade linear;
-      animation-timeline: scroll();
-  }
-}
-@media(max-width:600px){
-  #iiitbbsr{
-      font-size: 20px;
-      top: calc(240px + 100vh);
-      left: -100px;
-  }
-}
 #bg-black{
   background-color: black;
   height: 100vh;
